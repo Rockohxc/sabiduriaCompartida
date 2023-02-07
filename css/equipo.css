@@ -1,0 +1,97 @@
+.tarjeta
+{
+    position: relative;
+    width: 320px;
+    height: 450px;
+    background: #957878;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 15px 35px rgba(0, 0, 0,0.25);
+}
+
+.tarjeta .poster
+{
+    position: relative;
+    overflow: hidden;
+
+}
+
+.tarjeta .poster::before
+{
+    content: '';
+    position: absolute;
+    bottom: -180px;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(0deg, #957878 50%, transparent);
+    transition: 0.5s;
+    z-index: 1;
+}
+
+.tarjeta:hover .poster::before
+{
+    bottom: 0px
+}
+
+.tarjeta .poster img
+{
+    width: 100%;
+    transition: 0.5s;
+}
+
+.tarjeta:hover .poster img
+{
+    transform: translateY(-50px);
+    filter: blur(5px);
+}
+
+.tarjeta .details
+{
+    position: absolute;
+    bottom: -170px;
+    left: 0;
+    padding: 20px;
+    width: 100%;
+    z-index: 2;
+    transition: 0.5s;
+}
+
+.tarjeta:hover .details
+{
+    bottom: 40px;
+}
+
+.tarjeta .details .logoTitulo
+{
+    max-width: 300px;
+}
+
+.tarjeta .details h4
+{
+    font-size: 0.9em;
+    color: #fff;
+}
+
+.tarjeta .details .tags
+{
+    position: relative;
+    margin-top: 1px;
+}
+
+.tarjeta .details .tags span
+{
+    padding: 2px 5px;
+    color: #fff;
+    background: #07368d;
+    border-radius: 4px;
+}
+
+.tarjeta .details .tags span:nth-child(2) {
+    background: #ebbd4d;
+}
+
+.tarjeta .details .info{
+    color: #ffffff;
+    margin-top: 10px;
+
+}
