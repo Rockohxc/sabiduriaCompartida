@@ -49,12 +49,24 @@
     bottom: -180px;
     width: 100%;
     height: 100%;
-    background: linear-gradient(0deg, #1e7f2b 50%, transparent);
+    background: linear-gradient(0deg, #61f174 50%, transparent);
     transition: 0.5s;
     z-index: 1;
 }
 
 .tarjeta .poster-salvador::before
+{
+    content: '';
+    position: absolute;
+    bottom: -180px;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(0deg, #8b9d15 50%, transparent);
+    transition: 0.5s;
+    z-index: 1;
+}
+
+.tarjeta .poster-carolina::before
 {
     content: '';
     position: absolute;
@@ -89,6 +101,9 @@
 
 
 /* Aquí termina el efecto cortina*/
+
+
+/* efecto Blur y animaciones Martina*/
 .tarjeta .poster img
 {
     width: 100%;
@@ -100,6 +115,48 @@
 {
     transform: translateY(-50px);
     filter: blur(5px);
+}
+
+/* efecto Blur y animaciones Rodrigo*/
+
+.tarjeta:hover .poster-rodrigo img
+{
+    transform: translateY(-50px);
+    filter: blur(5px);
+}
+
+.tarjeta .poster-rodrigo img
+{
+    width: 100%;
+    transition: 0.5s;
+}
+
+/* efecto Blur y animaciones Salvador*/
+
+.tarjeta:hover .poster-salvador img
+{
+    transform: translateY(-50px);
+    filter: blur(5px);
+}
+
+.tarjeta .poster-salvador img
+{
+    width: 100%;
+    transition: 0.5s;
+}
+
+/* efecto Blur y animaciones Carolina*/
+
+.tarjeta:hover .poster-carolina img
+{
+    transform: translateY(-50px);
+    filter: blur(5px);
+}
+
+.tarjeta .poster-carolina img
+{
+    width: 100%;
+    transition: 0.5s;
 }
 
 .tarjeta .details
@@ -143,9 +200,22 @@
     border-radius: 4px;
 }
 
-.tarjeta .details .tags span:nth-child(2) {
-    background: #ebbd4d;
+.tarjeta .details .tags .CIISA
+{
+    background: #048b21;
 }
+
+.tarjeta .details .tags .informatica
+{
+    background: #091298;
+}
+
+.tarjeta .details .tags .fisica
+{
+    background: #8b9d15;
+}
+
+
 
 .tarjeta .details .info{
     color: #ffffff;
