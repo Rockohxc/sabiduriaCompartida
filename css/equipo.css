@@ -28,6 +28,8 @@
 
 }
 
+
+/* Aquí van los cambios para la iluminación gradiente*/
 .tarjeta .poster::before
 {
     content: '';
@@ -40,11 +42,53 @@
     z-index: 1;
 }
 
+.tarjeta .poster-rodrigo::before
+{
+    content: '';
+    position: absolute;
+    bottom: -180px;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(0deg, #1e7f2b 50%, transparent);
+    transition: 0.5s;
+    z-index: 1;
+}
+
+.tarjeta .poster-salvador::before
+{
+    content: '';
+    position: absolute;
+    bottom: -180px;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(0deg, #8b9d15 50%, transparent);
+    transition: 0.5s;
+    z-index: 1;
+}
+
+
+/* Aquí termina el efecto iluminación gradiente*/
+
+
+/* Aquí empieza el efecto cortina*/
 .tarjeta:hover .poster::before
 {
     bottom: 0px
 }
 
+.tarjeta:hover .poster-rodrigo::before
+{
+    bottom: 0px
+}
+
+.tarjeta:hover .poster-salvador::before
+{
+    bottom: 0px
+}
+
+
+
+/* Aquí termina el efecto cortina*/
 .tarjeta .poster img
 {
     width: 100%;
@@ -61,7 +105,7 @@
 .tarjeta .details
 {
     position: absolute;
-    bottom: -170px;
+    bottom: -190px;
     left: 0;
     padding: 20px;
     width: 100%;
