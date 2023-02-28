@@ -3,9 +3,7 @@
     display: flex;
     flex-wrap: wrap;
     justify-content:space-between;
-    
 }
-
 
 .tarjeta
 {
@@ -23,7 +21,6 @@
 {
     position: relative;
     overflow: hidden;
-
 }
 
 
@@ -59,7 +56,7 @@
     bottom: -180px;
     width: 100%;
     height: 100%;
-    background: linear-gradient(0deg, #8b9d15 50%, transparent);
+    background: linear-gradient(0deg, #1382EE 50%, transparent);
     transition: 0.5s;
     z-index: 1;
 }
@@ -77,28 +74,48 @@
 }
 
 
+
+.tarjeta .poster-voluntariado::before
+{
+    content: '';
+    position: absolute;
+    bottom: -180px;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(0deg, #908986 50%, transparent);
+    transition: 0.5s;
+    z-index: 1;
+}
 /* Aquí termina el efecto iluminación gradiente*/
+
+
+
+poster-voluntariado
+
 
 
 /* Aquí empieza el efecto cortina*/
 .tarjeta:hover .poster::before
 {
-    bottom: 0px
+    bottom: 0px;
 }
 
 .tarjeta:hover .poster-rodrigo::before
 {
-    bottom: 0px
+    bottom: 0px;
 }
 
 .tarjeta:hover .poster-salvador::before
 {
-    bottom: 0px
+    bottom: 0px;
 }
 
-
-
+.tarjeta:hover .poster-voluntariado::before
+{
+    bottom: 0px;
+}
 /* Aquí termina el efecto cortina*/
+
 
 
 /* efecto Blur y animaciones Martina*/
@@ -157,6 +174,26 @@
     transition: 0.5s;
 }
 
+
+
+/* efecto Blur y animaciones Voluntariado*/
+
+.tarjeta:hover .poster-voluntariado img
+{
+    transform: translateY(-50px);
+    filter: blur(5px);
+}
+
+.tarjeta .poster-voluntariado img
+{
+    width: 100%;
+    transition: 0.5s;
+}
+
+
+
+
+/* Texto escondido*/
 .tarjeta .details
 {
     position: absolute;
@@ -213,6 +250,19 @@
     background: #8b9d15;
 }
 
+.tarjeta .details .tags .uMayor
+{
+    background: #FEDA3E;
+}
+
+.tarjeta .details .tags .veterinaria
+{
+    background: #4b9bec;
+}
+
+
+
+
 .tarjeta .details .tags .autonoma
 {
     background: #d70a0a;
@@ -230,9 +280,13 @@
 }
 
 
-
 .tarjeta .details .iconos .redes-sociales
 {
     display: flex;
     justify-content: space-around;
 }
+
+
+
+
+
